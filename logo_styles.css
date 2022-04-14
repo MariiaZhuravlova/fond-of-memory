@@ -1,0 +1,36 @@
+:root
+{
+    --primary-menu-color: #FFFFFF;
+        
+}
+.link {
+    font-style: normal;
+    text-decoration: none;
+  }
+ 
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+.logo{
+    display: flex;
+    align-items: center;
+}
+  .logo__text-first{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--primary-menu-color);
+    margin-left: 35px;
+  }
+  .logo__text-second{
+       font-weight: 700;
+    }
+    
+   .logo__image{
+       height: 41px;
+       width: auto;
+   }
