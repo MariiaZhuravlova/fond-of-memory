@@ -1,7 +1,7 @@
 :root
 {
     --primary-menu-color: #FFFFFF;
-        
+    --color-logo-mob: rgba(43, 45, 46, 1);   
 }
 .link {
     font-style: normal;
@@ -33,4 +33,7 @@
    .logo__image{
        height: 41px;
        width: auto;
+   }
+   .logo-mob{
+     color: var(--color-logo-mob);
    }

@@ -9,7 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles-header.css">
     <link rel="stylesheet" href="logo_styles.css">
     <link rel="stylesheet" href="nav_button.css">
@@ -26,19 +32,35 @@
                 <span class="logo__text-second">росiйскої агресії</span></span>
              </a>
 
-             <!-- <button type="button" 
-             class="button-menu js-open-menu"
-             aria-expanded="false" 
-             aria-controls="mob-menu">  
-                 <svg width="35" height="35" aria-label="Переключатель мобильного меню">
-                     <use class="icon-menu" href="icons.svg#icon-burger"></use>
-                 </svg>
-             </button>   -->
-             <!-- <button type="button" class="button-menu js-close-menu">
-                <svg width="20" height="20" aria-label="Переключатель мобильного меню">
-                    <use class="icon-cross" href="icons.svg#icon-mob-menu-close"></use>
-                </svg>
-                </button> -->
+             <button
+             class="menu-toggle js-open-menu"
+             aria-expanded="false"
+             aria-controls="mobile-menu">
+           <svg width="27" height="21" fill=#fff aria-label="Переключатель мобильного меню">
+                <use class="icon-menu" href="./images/icons.svg#icon-burger"></use>
+            </svg>
+            </button>
+
+             <div class="menu-container js-menu-container" id="mobile-menu">
+                <div>
+                <button class="menu-toggle js-close-menu">
+                    <svg width="20" height="20" aria-label="Переключатель мобильного меню">
+                        <use class="icon-menu" href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                  </button>
+                <a href="" class="link logo">
+                    <img src="./images/logo-mob.jpg" alt="logo" class="logo__image">
+                    <span class="logo__text-first logo-mob">фонд пам’яті <br/>
+                    <span class="logo__text-second">росiйскої агресії</span></span>
+                 </a>
+                <ul class="mobile-menu list">
+                  <li class="mobile_item"><button class="mob__button" aria-label="Алея героїв">Алея героїв</button></li>
+                  <li class="mobile_item"><button class="mob__button time-line-mob" aria-label="Time line">Time line</button></li>
+                  <li class="mobile_item"><button class="mob__button" aria-label="Історія фольклору">Історія фольклору</button></li>
+                  <li class="mobile_item"><button class="mob__button" aria-label="Статистика">Статистика</button>
+                </ul></div>
+                <div class="logout-mob"><button type="button" class="logout-button-mob" aria-label="logout">logout</button></div>
+              </div>
 
            <nav class="header-navigation">
             <ul class="navigation__list list">
@@ -56,11 +78,12 @@
                 </li>
             </ul> 
         </nav>
-            <button type="button" class="logout-button" aria-label="logout">log out</button>
+            <button type="button" class="logout-button" aria-label="logout">logout</button>
           
         </div>
     </div>
    </header>
+   <main></main>
    
    <footer class="main-container-footer">
     <div class="container">
@@ -109,6 +132,13 @@
                      
         </div>
     </div>
-   </footer> 
+   </footer>
+   <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="mobile-menu.js"></script> 
 </body>
 </html>

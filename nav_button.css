@@ -2,7 +2,8 @@
 {
     --primary-menu-color: #FFFFFF;
     --accent-color: #FFD700;
-    
+    --time-line-mob: rgba(66, 133, 244, 1);
+    --text-menu-button: rgba(0, 0, 0, 1);
 }
 
 .navigation__button {
@@ -23,5 +24,19 @@
     } 
     .time-line-button{
       color: var(--accent-color);
+    }
+    .mob__button{
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      background-color: transparent;
+      color: var(--text-menu-button);
+      border: none;
+      cursor: pointer;
+      transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .time-line-mob{
+      color: var(--time-line-mob);
     }
   

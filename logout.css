@@ -11,7 +11,7 @@
 .logout-button:focus,
 .logout-button:active{
     background-color:  rgba(249, 216, 73, .3);
-             
+    color: #fff;        
     }
 
 @media screen and (min-width: 768px) {
@@ -26,8 +26,6 @@
     padding-bottom: 5px;
     
     font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
     line-height: 15px;
     color: var(--text-color);
@@ -37,7 +35,37 @@
     border: none;
     cursor: pointer;
 
-    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
-   
-    }
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
    }
+   }
+   .logout-button-mob{
+    text-align: center;
+    
+    height: 44px;
+    width: 167px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    
+    font-family: 'Montserrat';
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--text-color);
+
+    background-color: var(--bgc-button);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+.logout-button-mob:hover,
+.logout-button-mob:focus,
+.logout-button-mob:active{
+    background-color:  rgba(249, 216, 73, .3);
+    color: #fff;        
+    }
