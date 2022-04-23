@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="styles-header.css">
     <link rel="stylesheet" href="logo_styles.css">
     <link rel="stylesheet" href="nav_button.css">
     <link rel="stylesheet" href="logout.css">
 </head>
 <body>
-   <header class="main-container">
+   <header class="main-container-header">
     <div class="container">
         <h2 class="visually-hidden">Header</h2>
         <div class="container-navigation line-navigation">
@@ -25,19 +25,34 @@
                 <span class="logo__text-first">фонд пам’яті <br/>
                 <span class="logo__text-second">росiйскої агресії</span></span>
              </a>
+
+             <!-- <button type="button" 
+             class="button-menu js-open-menu"
+             aria-expanded="false" 
+             aria-controls="mob-menu">  
+                 <svg width="35" height="35" aria-label="Переключатель мобильного меню">
+                     <use class="icon-menu" href="icons.svg#icon-burger"></use>
+                 </svg>
+             </button>   -->
+             <!-- <button type="button" class="button-menu js-close-menu">
+                <svg width="20" height="20" aria-label="Переключатель мобильного меню">
+                    <use class="icon-cross" href="icons.svg#icon-mob-menu-close"></use>
+                </svg>
+                </button> -->
+
            <nav class="header-navigation">
             <ul class="navigation__list list">
                 <li class="navigation__item">
-                    <button class="navigation__button" aria-label="Timeline">Timeline</button>
+                    <button class="navigation__button time-line-button" aria-label="Time line">Time line</button>
                 </li> 
                 <li class="navigation__item">
-                    <button class="navigation__button" aria-label="">Алея героїв</button>
+                    <button class="navigation__button" aria-label="Алея героїв">Алея героїв</button>
                 </li>
                 <li class="navigation__item">
-                    <button class="navigation__button" aria-label="">Статистика</button>
+                    <button class="navigation__button" aria-label="Статистика">Статистика</button>
                 </li>
                 <li class="navigation__item">
-                    <button class="navigation__button" aria-label="">Історія фольклору</button>
+                    <button class="navigation__button" aria-label="Історія фольклору">Історія фольклору</button>
                 </li>
             </ul> 
         </nav>
@@ -46,40 +61,51 @@
         </div>
     </div>
    </header>
-   <footer class="main-container">
+   
+   <footer class="main-container-footer">
     <div class="container">
         <h2 class="visually-hidden">Header</h2>
-        <div class="container-navigation">
-            <a href="" class="link logo">
-                <img src="./images/logo.jpg" alt="logo" class="logo__image">
-                <span class="logo__text-first">фонд пам’яті <br/>
-                <span class="logo__text-second">росiйскої агресії</span></span>
+        <div class="container-info line-navigation-footer">
+               
+                <a href="" class="link logo">
+                    <img src="./images/logo.jpg" alt="logo" class="logo__image">
+                    <span class="logo__text-first">фонд пам’яті <br/>
+                    <span class="logo__text-second">росiйскої агресії</span></span>
              </a>
-           <nav class="header-navigation">
-            <ul class="navigation__list list">
+            
+        <div class="container-navigation-footer">
+            
+             <ul class="navigation__list-info list">
                 <li class="navigation__item-info">
-                    <button class="navigation__button" aria-label="">Про проект</button>
+                    <button class="navigation__button" aria-label="Про проект">Про проект</button>
                 </li> 
                 <li class="navigation__item-info">
-                    <button class="navigation__button" aria-label="">Команда</button>
+                    <button class="navigation__button" aria-label="Команда">Команда</button>
                 </li> 
-                <li class="navigation__item-info">
-                    <button class="navigation__button after-title"></button>
-                </li> 
+            </ul>
+            
+        </div>
+        <div class="footer__line">
+        </div>
+           <nav class="footer-navigation">
+            
+            <ul class="navigation__list-menu list">
                 <li class="navigation__item-footer">
-                    <button class="navigation__button" aria-label="Timeline">Timeline</button>
-                </li> 
-                <li class="navigation__item-footer">
-                    <button class="navigation__button" aria-label="">Алея героїв</button>
-                </li>
-                <li class="navigation__item-footer">
-                    <button class="navigation__button" aria-label="">Статистика</button>
-                </li>
-                <li class="navigation__item-footer">
-                    <button class="navigation__button" aria-label="">Історія фольклору</button>
-                </li>
-            </ul> 
-        </nav>
+                <button class="navigation__button time-line-button" aria-label="Time line">Time line</button>
+            </li> 
+            <li class="navigation__item-footer">
+                <button class="navigation__button" aria-label="Алея героїв">Алея героїв</button>
+            </li>
+           </ul>
+        <ul class="navigation__list-menu list">
+            <li class="navigation__item-footer">
+                <button class="navigation__button" aria-label="Статистика">Статистика</button>
+            </li>
+            <li class="navigation__item-footer">
+                <button class="navigation__button" aria-label="Історія фольклору">Історія фольклору</button>
+            </li></ul>
+                
+             </nav>
                      
         </div>
     </div>

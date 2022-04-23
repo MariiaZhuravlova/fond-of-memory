@@ -21,4 +21,7 @@
       text-decoration: underline;
       color: var(--accent-color);
     } 
+    .time-line-button{
+      color: var(--accent-color);
+    }
   
