@@ -190,7 +190,7 @@ margin-top: 48px;
     align-items: center;
     justify-content: center; */
   
-    /* background-color: transparent; */
+    background-color: transparent;
     cursor: pointer;
     border: none;
   } 
@@ -200,7 +200,7 @@ margin-top: 48px;
     top: 11px;
     right: 3px;
     
-    /* background-color: transparent; */
+    background-color: transparent;
     cursor: pointer;
     border: none;
   } 
@@ -210,10 +210,7 @@ margin-top: 48px;
       display: none;
     }
   }
-.menu-toggle:hover .icon-menu,
-.menu-toggle:focus .icon-menu{
-  fill:  red;
-}
+
 .mobile-menu {
   padding-top: 48px;
 }
@@ -237,13 +234,15 @@ margin-top: 48px;
   transform: translateX(0);
 }
 
-
 .logout-mob{
 margin-top: auto;
 position: relative;
 }
-.icon-menu{
-fill: red;
+.icon-close{
+fill: #2B2D2E;
+}
+.icon-open{
+  fill: #fff;
 }
 .logout-mob::before {
   content: '';
