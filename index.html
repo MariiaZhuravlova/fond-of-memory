@@ -31,37 +31,15 @@
                 <span class="logo__text-first">фонд пам’яті <br/>
                 <span class="logo__text-second">росiйскої агресії</span></span>
              </a>
-
-             <button
-             class="menu-toggle js-open-menu"
+    
+             <button class="menu-toggle-open js-open-menu"
              aria-expanded="false"
              aria-controls="mobile-menu">
-           <svg width="27" height="21" fill=#fff aria-label="Переключатель мобильного меню">
-                <use class="icon-menu" href="./images/icons.svg#icon-burger"></use>
+           <svg width="27" height="21" aria-label="Переключатель мобильного меню">
+                <use href="./images/sprite.svg#icon-burger"></use>
             </svg>
             </button>
-
-             <div class="menu-container js-menu-container" id="mobile-menu">
-                <div>
-                <button class="menu-toggle js-close-menu">
-                    <svg width="20" height="20" aria-label="Переключатель мобильного меню">
-                        <use class="icon-menu" href="./images/icons.svg#icon-close"></use>
-                    </svg>
-                  </button>
-                <a href="" class="link logo">
-                    <img src="./images/logo-mob.jpg" alt="logo" class="logo__image">
-                    <span class="logo__text-first logo-mob">фонд пам’яті <br/>
-                    <span class="logo__text-second">росiйскої агресії</span></span>
-                 </a>
-                <ul class="mobile-menu list">
-                  <li class="mobile_item"><button class="mob__button" aria-label="Алея героїв">Алея героїв</button></li>
-                  <li class="mobile_item"><button class="mob__button time-line-mob" aria-label="Time line">Time line</button></li>
-                  <li class="mobile_item"><button class="mob__button" aria-label="Історія фольклору">Історія фольклору</button></li>
-                  <li class="mobile_item"><button class="mob__button" aria-label="Статистика">Статистика</button>
-                </ul></div>
-                <div class="logout-mob"><button type="button" class="logout-button-mob" aria-label="logout">logout</button></div>
-              </div>
-
+    
            <nav class="header-navigation">
             <ul class="navigation__list list">
                 <li class="navigation__item">
@@ -82,9 +60,28 @@
           
         </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <div>
+        <button class="menu-toggle js-close-menu">
+            <svg width="20" height="20" aria-label="Переключатель мобильного меню">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        <a href="" class="link logo">
+            <img src="./images/logo-mob.jpg" alt="logo" class="logo__image">
+            <span class="logo__text-first logo-mob">фонд пам’яті <br/>
+            <span class="logo__text-second">росiйскої агресії</span></span>
+         </a>
+        <ul class="mobile-menu list">
+          <li class="mobile_item"><button class="mob__button" aria-label="Алея героїв">Алея героїв</button></li>
+          <li class="mobile_item"><button class="mob__button time-line-mob" aria-label="Time line">Time line</button></li>
+          <li class="mobile_item"><button class="mob__button" aria-label="Історія фольклору">Історія фольклору</button></li>
+          <li class="mobile_item"><button class="mob__button" aria-label="Статистика">Статистика</button>
+        </ul></div>
+        <div class="logout-mob"><button type="button" class="logout-button-mob" aria-label="logout">logout</button></div>
+      </div>
    </header>
-   <main></main>
-   
+      
    <footer class="main-container-footer">
     <div class="container">
         <h2 class="visually-hidden">Header</h2>
